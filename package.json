@@ -1,0 +1,35 @@
+{
+  "name": "@chappa'ai/update-packages",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier"
+  },
+  "prettier": "@dmsi/prettier-config",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "Chappa'ai Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chappa-ai-monorepo/update-packages"
+  },
+  "bin": {
+    "update-packages": "node index.js"
+  },
+  "dependencies": {
+    "@chappa'ai/get-next-rc": "^1.0.0",
+    "@chappa'ai/next-package-version": "^1.2.1",
+    "@chappa'ai/update-nested-dependencies": "^1.0.1",
+    "mri": "^1.1.4"
+  }
+}
