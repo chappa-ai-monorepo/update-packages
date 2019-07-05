@@ -1,4 +1,4 @@
-#!usr/bin/env node
+#!/usr/bin/env node
 const fs = require('fs');
 
 const nextVersions = require(`@chappa'ai/next-package-version`);
