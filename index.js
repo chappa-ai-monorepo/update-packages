@@ -37,7 +37,6 @@ nextVersions({ includePackage: true })
         {}
     )));
     const updatedPackages = updateNestedDependencies(packages);
-    console.log(updatedPackages);
 
     updatedPackages.forEach((pkg, idx) => {
       writeFile(versions[idx].pkgPath, pkg);
