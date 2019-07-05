@@ -24,7 +24,7 @@
     "url": "https://github.com/chappa-ai-monorepo/update-packages"
   },
   "bin": {
-    "update-packages": "node index.js"
+    "update-packages": "index.js"
   },
   "dependencies": {
     "@chappa'ai/get-next-rc": "^1.0.0",
